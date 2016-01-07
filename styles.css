@@ -1,34 +1,78 @@
-.top-box {
-	background-color: #FFB4B0;
-	height: 30px;
-	border:  1px solid black;
-	margin: 25px 15px 30px 75px;
-	font-family: "Arial";
-	cursor: pointer;
+body {
+  font-family: "Arial", sans-serif;
 }
 
-.top-box > li {
-	list-style-type: none;
-	margin: 5px 5px 5px 5px;
-	float: left;
+.nav-selected {
+  text-decoration: none;
+  color: #000;
 }
 
-.top-box > li:last {
-	border-right: none;
+nav {
+  background-color: #FFB4B0;
+  height: 30px;
+  width: 1111px;
+  margin: 0 0 10px 5px;
+  border:  1px solid black;
+  padding: 10px 0 0 0;
+  font-family: "Arial";
+  cursor: pointer;
+}
+
+nav li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9em;
+  border-right: 1px solid black;
+  padding: 0 2px 10px 5px;
+  width: 7%;
 }
 
 .left-box {
+  height: 300px;
+	width: 400px;
 	background-color: #4DD7FA;
 	border: 1px solid black;
-	float: left;
-	margin: 25px 35px 30px 75px;
-	font-family: "Arial";
-}
-
-.left-box > li {
-	
+	margin: 0 5px 0 5px;
+	padding: 0;
+  float: left;
 }
 
 .right-box {
-	background-color: #FEFAC0;
+  height: 300px;
+  width: 700px;
+  background-color: #FEFAC0;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0 5px 0 5px;
+  float: left;
+}
+
+.song-title {
+  list-style: none;
+  font-size: 1.5em;
+  margin: 10px 0 10px 0;
+}
+
+ul.song-details {
+/*  max-width: 100%;*/
+  font-size: .9em;
+  color: #FF0000;
+  padding: 0;
+  margin: 0;
+}
+
+.song-details li {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  border-right: 1px solid black;
+}
+
+
+
+li.last-item {
+  border-right: none;
 }
