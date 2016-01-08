@@ -1,5 +1,35 @@
+#container {
+  height: 1200px;
+  width: 1100px;
+  background-color: #FFE;
+  padding: 20px 100px 20px 100px;
+  margin: 20px 100px 20px 100px;
+}
+
 body {
   font-family: "Arial", sans-serif;
+}
+
+nav {
+  background-color: #FFB4B0;
+  height: 30px;
+  width: 900px;
+  margin: 10px 0 10px 5px;
+  border:  1px solid black;
+  padding: 0;
+}
+
+nav ul {
+  margin: 7px 0 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9em;
+  border-right: 1px solid black;
+  width: 100px;
 }
 
 .nav-selected {
@@ -7,41 +37,20 @@ body {
   color: #000;
 }
 
-nav {
-  background-color: #FFB4B0;
-  height: 30px;
-  width: 1111px;
-  margin: 0 0 10px 5px;
-  border:  1px solid black;
-  padding: 10px 0 0 0;
-  font-family: "Arial";
-  cursor: pointer;
-}
-
-nav li {
-  list-style: none;
-  margin: 0;
-  display: inline-block;
-  text-align: center;
-  font-size: 0.9em;
-  border-right: 1px solid black;
-  padding: 0 2px 10px 5px;
-  width: 7%;
-}
-
 .left-box {
-  height: 300px;
-	width: 400px;
-	background-color: #4DD7FA;
-	border: 1px solid black;
-	margin: 0 5px 0 5px;
-	padding: 0;
+  height:  298px;
+  width: 228px;
+  background-color: #4DD7FA;
+  border: 1px solid black;
+  margin: 0 5px 0 5px;
+  padding: 0;
   float: left;
+  font-size: 0.8em;
 }
 
 .right-box {
-  height: 300px;
-  width: 700px;
+  height: 298px;
+  width: 658px;
   background-color: #FEFAC0;
   border: 1px solid black;
   padding: 0;
@@ -52,13 +61,12 @@ nav li {
 .song-title {
   list-style: none;
   font-size: 1.5em;
+  color: #785616;
   margin: 10px 0 10px 0;
 }
 
 ul.song-details {
-/*  max-width: 100%;*/
   font-size: .9em;
-  color: #FF0000;
   padding: 0;
   margin: 0;
 }
@@ -71,8 +79,30 @@ ul.song-details {
   border-right: 1px solid black;
 }
 
-
-
 li.last-item {
   border-right: none;
+}
+
+input[type="range"] {
+  margin: 0 0 0 25px;
+}
+
+.left-box label, .left-box select, .left-box legend {
+  margin: 0 0 0 25px;
+  color: #000000;
+}
+
+#buttons-left-column {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 0 0 10px;
+}
+
+#buttons-right-column {
+  display: inline-block;
+  padding: 0 0 0 10px;
+}
+
+#filter-button {
+  margin-left: 80px;
 }
